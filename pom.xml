@@ -86,17 +86,10 @@
 					<execution>
 						<phase>package</phase>
 						<goals>
-							<goal>copy</goal>
+							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>org.eclipse.jetty</groupId>
-									<artifactId>jetty-runner</artifactId>
-									<version>9.4.1.v20170120</version>
-									<destFileName>jetty-runner.jar</destFileName>
-								</artifactItem>
-							</artifactItems>
+							<includeArtifactIds>webapp-runner</includeArtifactIds>
 						</configuration>
 					</execution>
 				</executions>
